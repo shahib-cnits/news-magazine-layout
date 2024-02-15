@@ -1,0 +1,197 @@
+ <section id="hero-section">
+        <div class="container">
+            <div class="hero">
+                <div class="hero-text">
+                    <h2>Editor's pick</h2>
+                    <p>Discover the most outstanding articles in all topics of life.</p>
+                </div>
+                <div class="hero-card-img">
+                    <div class="hero-card">
+                        <div class="hero-card-content">
+                            <button>industrial</button>
+                            <h3>Lenovo’s smarter devices stoke professional passions</h3>
+                            <div class="user">
+                                <div class="user-img">
+                                    <img src="./images/hero-user.png" alt="">
+                                </div>
+                                <div class="user-text">
+                                    <h4>foulcher Nathanil</h4>
+                                    <p>May 20,2021</p>
+                                </div>
+                            </div>
+                            <div class="hero-card-content-icons">
+                                <div class="hero-card-content-icons-left">
+                                    <p><i class="fa-regular fa-heart"></i> 34</p>
+                                    <p class="comment"><i class="fa-regular fa-comment"></i> 110</p>
+
+                                </div>
+                                <div class="hero-card-content-icons-right">
+                                    <p><i class="fa-solid fa-arrow-up-from-bracket"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-img">
+                        <img src="./images/hero-img.png" alt="" class="">
+                    </div>
+                </div>
+
+                <div class="arrow">
+                    <div class="arrow-left">
+                        <p><i class="fa-solid fa-arrow-right"></i></p>
+                    </div>
+                    <div class="arrow-right">
+                        <p><i class="fa-solid fa-arrow-left"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    #hero-section{
+        background-color: #f8f8f8;
+        padding-bottom: 170px;
+    
+    }
+    .hero{
+        position: relative;
+    }
+    .hero-card-img{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        top: 0;
+        left: 0;
+        
+    }
+    .hero-card{
+        width: 40%;
+        height: 40vh;
+        
+    }
+    .hero-img{
+        width: 60%;
+        height: 40vh;
+        border: none;
+        top: 0;
+        left: 0;
+        
+        
+    }
+    .hero-img img{
+        width: 100%;
+        aspect-ratio: 2/1;
+        height: auto;
+        background-size: cover;
+        border-radius: 20px;
+    }
+    .hero-text{
+        padding: 30px 0px;
+    }
+    .hero-text h2{
+        color: black;
+        font-size: 30px;
+    }
+    .hero-text p{
+        color: gray;
+        font-size: 20px;
+        padding: 20px 0px;
+    }
+    .hero-card-content h3{
+        background-color: none !important;
+    }
+    .hero-card-content{
+        width: 25%;
+        height: 30vh;
+        padding: 30px;
+        box-shadow: 0 1px 10px 0px rgba(0,0,0,.1);
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        backdrop-filter: blur(10px);
+        
+        z-index: 1;
+        top: 50px;
+        right: 100px;
+    
+        
+    }
+    .hero-card-content h3{
+        font-size: 22px;
+    }
+    .hero-card-content-icons-left p{
+        color: black;
+    }
+    .hero-card-content-icons-right p{
+        color: black;
+    }
+    .user{
+        display: flex;
+        background-color: none !important;
+        align-items: center;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .user-img img{
+        border-radius: 50%;
+        width: 40px;
+    
+    }
+    /* .user-img{
+        
+    } */
+    .user-text{
+        font-size: 13px;
+        padding-left: 10px;
+        
+    }
+    .hero-card-content-icons{
+        display: flex;
+        justify-content: space-between;
+        background-color: none !important;
+        padding-top: 20px;
+        
+    }
+    
+    .hero-card-content-icons-left{
+        display: flex;
+        
+    }
+    .hero-card-content-icons-left p{
+        font-size: 15px;
+    }
+    .comment{
+        padding-left: 30px;
+    
+    }
+    .hero-card-content-icons-right{
+        background-color: lightgray;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 50%;
+    
+    }
+    .arrow{
+        display: flex;
+        gap: 30px;
+        padding-left: 50px;
+        font-size: 15px;
+    }
+    .arrow-left{
+        padding: 10px 15px;
+        border: none;
+        border-radius: 50%;
+    }
+    .arrow-left:hover{
+        border: 1px solid lightgray;
+    
+    }
+    .arrow-right{
+        padding: 10px 15px;
+        border: 1px solid lightgray;
+        border-radius: 50%;
+        
+    }

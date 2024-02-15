@@ -12,9 +12,10 @@ body{
 #nav-section{
     height: auto;
     width: 100%;
-    box-shadow: 0 1px 10px 0px rgba(0,0,0,.1);
+    box-shadow: 0 0px 2px px rgba(0,0,0,.5);
     background-color: white;
-    
+    position: fixed;
+    z-index: 2;
 }
 .container{
     max-width: 1280px;
@@ -27,8 +28,10 @@ body{
     height: 80px;
     
     
+    
 }
 .nav-logo svg{
+    fill: #5046e4;
     cursor: pointer;
     
 }
@@ -45,7 +48,7 @@ body{
 
 }
 .nav-links li:hover{
-    background-color: rgba(243, 243, 243, 0.863);
+    background-color: rgba(226, 242, 247, 0.623);
 
 }
 .nav-links a{
@@ -64,142 +67,139 @@ body{
     background-color: rgba(243, 243, 243, 0.863);
     cursor: pointer;
 }
+@media  screen and (max-width: 990px) {
+    .nav-links{
+        display: none;
+    }
+    
+    
+}
 /* nav section end*/
 
 /* hero section start*/
 
-#hero-section{
-    background-color: #f8f8f8;
-    padding-bottom: 170px;
+#hero-container{
+    width: 100%;
+
 }
-.hero-card-img{
+.hero{
+    width: 100%;
+    height: 90vh;
+    padding: 100px 0;
+
+
+
+}
+.hero-heading{
+    padding: 30px 0;
+}
+.hero-heading h2{
+    font-size: 40px;
+
+}
+.heading-para{
+    font-size: 23px;
+    color: gray;
+
+}
+.hero-content{
     display: flex;
-    
+    justify-content: space-between;
+    width: 100%;
+    height: 60vh;
+    padding: 50px 0;
+    position: relative;
+
 }
 .hero-card{
     width: 40%;
-   
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    padding: 30px 40px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    background-color: transparent;
+    
+}
+.hero-card-content h3{
+    font-size: 25px;
+    padding: 20px 0;
+}
+.hero-card-content button{
+    padding: 5px 7px;
+    border: none;
+    border-radius: 50px;
+    color: brown;
+    font-weight: 600;
+    background-color: rgba(255, 255, 0, 0.555);
+
 }
 .hero-img{
-    width: 90%;
-    height: 40vh;
-    border: none;
-    position: relative;
-    
+    width: 67%;
+    height: 60vh;
+    right: 0px;
+    top: 0;
+    position: absolute;
 }
 .hero-img img{
     width: 100%;
-    aspect-ratio: 2/1;
-    height: auto;
-    background-size: cover;
-    border-radius: 20px;
-}
-.hero-text{
-    padding: 30px 0px;
-}
-.hero-text h2{
-    color: black;
-    font-size: 30px;
-}
-.hero-text p{
-    color: gray;
-    font-size: 20px;
-    padding: 20px 0px;
-}
-.hero-card-content h3{
-    background-color: none !important;
-}
-.hero-card-content{
-    width: 25%;
-    height: 30vh;
-    padding: 30px;
-    box-shadow: 0 1px 10px 0px rgba(0,0,0,.1);
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4) !important;
-    backdrop-filter: blur(10px);
-    position: absolute;
-    z-index: 1;
-    left: 320px;
-    bottom: 350px;
-     
-
-}
-.hero-card-content h3{
-    font-size: 22px;
-}
-.hero-card-content-icons-left p{
-    color: black;
-}
-.hero-card-content-icons-right p{
-    color: black;
-}
-.user{
-    display: flex;
-    background-color: none !important;
-    align-items: center;
-    width: 100%;
-    padding-top: 20px;
-}
-.user-img img{
-    border-radius: 50%;
-    width: 40px;
-
-}
-/* .user-img{
-    
-} */
-.user-text{
-    font-size: 13px;
-    padding-left: 10px;
-    
-}
-.hero-card-content-icons{
-    display: flex;
-    justify-content: space-between;
-    background-color: none !important;
-    padding-top: 20px;
-    
-}
-
-.hero-card-content-icons-left{
-    display: flex;
-    
-}
-.hero-card-content-icons-left p{
-    font-size: 15px;
-}
-.comment{
-    padding-left: 30px;
-
-}
-.hero-card-content-icons-right{
-    background-color: lightgray;
+    height: 50vh;
+    object-fit: cover;
     border: none;
-    padding: 5px 10px;
+    border-radius: 20px;
+    right: 0;
+    top: 0;
+}
+.user-1{
+    display: flex;
+    gap: 20px;
+}
+
+.user-img-1 img{
+    width: 50px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border: none;
     border-radius: 50%;
 
 }
-.arrow{
+.hero-card-content-icons-1{
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-card-content-icons-1 p{
+    padding: 5px 15px;
+    padding-bottom: 5px;
+    background-color: none;
+    border: none;
+    border-radius: 50px;
+    transition: .5s;
+
+}
+
+.hero-card-content-icons-1 p:hover{
+    color: rgb(245, 147, 164);
+    background-color: rgba(255, 192, 203, 0.616);
+}
+.hero-card-content-icons-1 i:hover{
+    color: rgb(245, 147, 164);
+    background-color: rgba(255, 192, 203, 0.363);
+}
+.hero-card-content-icons-left-1{
     display: flex;
     gap: 30px;
-    padding-left: 50px;
-    font-size: 15px;
 }
-.arrow-left{
+.hero-card-content-icons-right-1 p{
     padding: 10px 15px;
     border: none;
-    border-radius: 50%;
+    border-radius: 50px;
 }
-.arrow-left:hover{
-    border: 1px solid lightgray;
 
-}
-.arrow-right{
-    padding: 10px 15px;
-    border: 1px solid lightgray;
-    border-radius: 50%;
-    
-}
 /* hero section end*/
 
 /* newest author section start*/
@@ -381,10 +381,10 @@ body{
     top: 75%;
     left: 3%;
 }
-.audio-article-card-content h5, p{
+/* .audio-article-card-content h5, p{
     color: #fff;
     
-}
+} */
 .audio-article-card-content h5{
     font-size: 20px;
     padding: 5px 0;
@@ -480,60 +480,7 @@ body{
 
 /* copy from hero section*/
 
-.hero-card-content h3{
-    background-color: none !important;
-}
-.hero-card-content{
-    width: 25%;
-    height: 30vh;
-    padding: 30px;
-    box-shadow: 0 1px 10px 0px rgba(0,0,0,.1);
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.4) !important;
-    backdrop-filter: blur(10px);
-    position: absolute;
-    z-index: 1;
-    left: 320px;
-    bottom: 350px;
-     
 
-}
-.hero-card-content h3{
-    font-size: 22px;
-}
-.hero-card-content-icons-left p{
-    color: black;
-}
-.hero-card-content-icons-right p{
-    color: black;
-}
-
-.hero-card-content-icons{
-    display: flex;
-    justify-content: space-between;
-    background-color: none !important;
-    padding-top: 20px;
-    
-}
-
-.hero-card-content-icons-left{
-    display: flex;
-    
-}
-.hero-card-content-icons-left p{
-    font-size: 15px;
-}
-.comment{
-    padding-left: 30px;
-
-}
-.hero-card-content-icons-right{
-    background-color: lightgray;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 50%;
-
-}
 /* copy from hero section end*/
 .leatest-article-content-small-cards{
     display: flex;
@@ -594,12 +541,24 @@ body{
                 </iframe> */
 
 /* ads section start*/
+
 #ads-section{
     padding: 100px 0;
+    width: 100%;
 }
+
 .ads-para{
     color: black;
     text-align: center;
+}
+.ads-img{
+    width: 100%;
+
+}
+.ads-img img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
 }
 /* ads section end*/
 
